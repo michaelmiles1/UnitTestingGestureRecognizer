@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwipeRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZh-3t-nUn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Swipe Counter" id="7bD-3w-5VJ">
+                                        <barButtonItem key="rightBarButtonItem" title="Reset" id="Rbb-nI-4T1">
+                                            <connections>
+                                                <action selector="resetCount:" destination="BYZ-38-t0r" id="wqo-uU-DMN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UP: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLF-Ax-GPe">
+                                <rect key="frame" x="166" y="118" width="82" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEFT: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-Y1-ZWX">
+                                <rect key="frame" x="40" y="179" width="111" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RIGHT: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh3-qf-nO5">
+                                <rect key="frame" x="241" y="179" width="133" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOWN: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCP-In-hTR">
+                                <rect key="frame" x="136" y="250" width="142" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe inside box" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUX-9W-bY9">
+                                <rect key="frame" x="143" y="341" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1x-yU-c4Y">
+                                <rect key="frame" x="20" y="367" width="374" height="475"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hZh-3t-nUn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3hg-NT-ReR"/>
+                            <constraint firstItem="pCP-In-hTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ava-lf-xsu"/>
+                            <constraint firstItem="RLF-Ax-GPe" firstAttribute="top" secondItem="hZh-3t-nUn" secondAttribute="bottom" constant="30" id="BBo-0d-eq7"/>
+                            <constraint firstItem="OfL-Y1-ZWX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BDP-eN-AVL"/>
+                            <constraint firstItem="hZh-3t-nUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EK2-sr-pYn"/>
+                            <constraint firstItem="pCP-In-hTR" firstAttribute="top" secondItem="qh3-qf-nO5" secondAttribute="bottom" constant="30" id="EiX-eY-t49"/>
+                            <constraint firstItem="OfL-Y1-ZWX" firstAttribute="top" secondItem="RLF-Ax-GPe" secondAttribute="bottom" constant="20" id="N5T-kp-tEQ"/>
+                            <constraint firstItem="qh3-qf-nO5" firstAttribute="centerY" secondItem="OfL-Y1-ZWX" secondAttribute="centerY" id="Rzi-M6-e7O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F1x-yU-c4Y" secondAttribute="bottom" constant="20" id="TwQ-Cf-mVn"/>
+                            <constraint firstItem="RLF-Ax-GPe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U2d-VR-jsN"/>
+                            <constraint firstItem="hZh-3t-nUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wr0-pU-oE5"/>
+                            <constraint firstItem="F1x-yU-c4Y" firstAttribute="top" secondItem="MUX-9W-bY9" secondAttribute="bottom" constant="5" id="YNz-yM-0Yr"/>
+                            <constraint firstItem="MUX-9W-bY9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nYm-T3-VrA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F1x-yU-c4Y" secondAttribute="trailing" constant="20" id="sQI-o0-zuN"/>
+                            <constraint firstItem="F1x-yU-c4Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="szb-my-cex"/>
+                            <constraint firstItem="MUX-9W-bY9" firstAttribute="top" secondItem="pCP-In-hTR" secondAttribute="bottom" constant="50" id="vIk-Vx-Lkw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qh3-qf-nO5" secondAttribute="trailing" constant="40" id="xEZ-TV-NL9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="downLabel" destination="pCP-In-hTR" id="53Y-Pv-9cB"/>
+                        <outlet property="leftLabel" destination="OfL-Y1-ZWX" id="lpj-Gu-1ex"/>
+                        <outlet property="rightLabel" destination="qh3-qf-nO5" id="Vtq-pM-42C"/>
+                        <outlet property="swipeView" destination="F1x-yU-c4Y" id="uFM-Qx-hdX"/>
+                        <outlet property="upLabel" destination="RLF-Ax-GPe" id="Y1Q-XX-8sA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+    </scenes>
+</document>

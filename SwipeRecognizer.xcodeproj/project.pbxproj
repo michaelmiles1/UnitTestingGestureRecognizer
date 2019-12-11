@@ -13,7 +13,18 @@
 		5C120FB0237B8C8100CD779F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C120FAE237B8C8100CD779F /* Main.storyboard */; };
 		5C120FB2237B8C8100CD779F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C120FB1237B8C8100CD779F /* Assets.xcassets */; };
 		5C120FB5237B8C8100CD779F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C120FB3237B8C8100CD779F /* LaunchScreen.storyboard */; };
+		5CF13A6223A1346B005F9D77 /* SwipeRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF13A6123A1346B005F9D77 /* SwipeRecognizerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CF13A6423A1346B005F9D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C120F9D237B8C8100CD779F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C120FA4237B8C8100CD779F;
+			remoteInfo = SwipeRecognizer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5C120FA5237B8C8100CD779F /* SwipeRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		5C120FB1237B8C8100CD779F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C120FB4237B8C8100CD779F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C120FB6237B8C8100CD779F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF13A5F23A1346B005F9D77 /* SwipeRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF13A6123A1346B005F9D77 /* SwipeRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRecognizerTests.swift; sourceTree = "<group>"; };
+		5CF13A6323A1346B005F9D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5C120FA2237B8C8100CD779F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF13A5C23A1346B005F9D77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				5C120FA7237B8C8100CD779F /* SwipeRecognizer */,
+				5CF13A6023A1346B005F9D77 /* SwipeRecognizerTests */,
 				5C120FA6237B8C8100CD779F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5C120FA5237B8C8100CD779F /* SwipeRecognizer.app */,
+				5CF13A5F23A1346B005F9D77 /* SwipeRecognizerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				5C120FB6237B8C8100CD779F /* Info.plist */,
 			);
 			path = SwipeRecognizer;
+			sourceTree = "<group>";
+		};
+		5CF13A6023A1346B005F9D77 /* SwipeRecognizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CF13A6123A1346B005F9D77 /* SwipeRecognizerTests.swift */,
+				5CF13A6323A1346B005F9D77 /* Info.plist */,
+			);
+			path = SwipeRecognizerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 5C120FA5237B8C8100CD779F /* SwipeRecognizer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5CF13A5E23A1346B005F9D77 /* SwipeRecognizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF13A6823A1346B005F9D77 /* Build configuration list for PBXNativeTarget "SwipeRecognizerTests" */;
+			buildPhases = (
+				5CF13A5B23A1346B005F9D77 /* Sources */,
+				5CF13A5C23A1346B005F9D77 /* Frameworks */,
+				5CF13A5D23A1346B005F9D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CF13A6523A1346B005F9D77 /* PBXTargetDependency */,
+			);
+			name = SwipeRecognizerTests;
+			productName = SwipeRecognizerTests;
+			productReference = 5CF13A5F23A1346B005F9D77 /* SwipeRecognizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +149,10 @@
 				TargetAttributes = {
 					5C120FA4237B8C8100CD779F = {
 						CreatedOnToolsVersion = 11.2;
+					};
+					5CF13A5E23A1346B005F9D77 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 5C120FA4237B8C8100CD779F;
 					};
 				};
 			};
@@ -116,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				5C120FA4237B8C8100CD779F /* SwipeRecognizer */,
+				5CF13A5E23A1346B005F9D77 /* SwipeRecognizerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 				5C120FB5237B8C8100CD779F /* LaunchScreen.storyboard in Resources */,
 				5C120FB2237B8C8100CD779F /* Assets.xcassets in Resources */,
 				5C120FB0237B8C8100CD779F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF13A5D23A1346B005F9D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CF13A5B23A1346B005F9D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF13A6223A1346B005F9D77 /* SwipeRecognizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CF13A6523A1346B005F9D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C120FA4237B8C8100CD779F /* SwipeRecognizer */;
+			targetProxy = 5CF13A6423A1346B005F9D77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5C120FAE237B8C8100CD779F /* Main.storyboard */ = {
@@ -318,6 +396,46 @@
 			};
 			name = Release;
 		};
+		5CF13A6623A1346B005F9D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 757N5X329U;
+				INFOPLIST_FILE = SwipeRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelgagemiles.SwipeRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeRecognizer.app/SwipeRecognizer";
+			};
+			name = Debug;
+		};
+		5CF13A6723A1346B005F9D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 757N5X329U;
+				INFOPLIST_FILE = SwipeRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelgagemiles.SwipeRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeRecognizer.app/SwipeRecognizer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +453,15 @@
 			buildConfigurations = (
 				5C120FBA237B8C8100CD779F /* Debug */,
 				5C120FBB237B8C8100CD779F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF13A6823A1346B005F9D77 /* Build configuration list for PBXNativeTarget "SwipeRecognizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF13A6623A1346B005F9D77 /* Debug */,
+				5CF13A6723A1346B005F9D77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
